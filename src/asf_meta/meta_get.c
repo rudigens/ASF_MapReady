@@ -41,10 +41,10 @@ PROGRAM HISTORY:
  * straight copy of c_getsys "algorithm" for DDR */
 char *meta_get_system(void)
 {
-#if defined(big_ieee)
-    return "big_ieee";
-#elif defined(lil_ieee)
-    return "lil_ieee";
+#if defined(ASF_BIG_IEEE)
+    return "BIG_IEEE";
+#elif defined(ASF_LIL_IEEE)
+    return "LIL_IEEE";
 #elif defined(cray_float)
     return "cray_float";
 #else
